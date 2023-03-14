@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+  }
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-image: url(../images/background-home-bdb.png);
+    /* Full height */
+      height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    max-width: 100% !important;
+}
+
+ul {
+
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+}
+
+/* Modify brand and text color */
+li > a {
+	color: white !important;
+}
+
+p, .p-2 {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+h3 {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 400 !important;
+  color: #fff !important; 
+}
+
+a {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 400;
+  color: #fff !important;  
+}
+
+/* index page style */
+.space-row-5 {
+  height: 5em;
+}
+
+.space-row-2 {
+  height: 2em;
+}
+
+.vertical-title {
+  writing-mode: rl-tb;
+  writing-mode:tb-rl;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* div right index */
+.button-cv {
+  background-color: #DCAAA0 !important;
+}
