@@ -37,7 +37,7 @@
       <!--Header -->
       <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg justify-content-center">
+        <nav class="navbar navbar-expand-lg">
           <!-- Container wrapper -->
           <div class="container">
               <a class="navbar-brand" href="{{ url_for('index')}}">
@@ -50,42 +50,43 @@
               </button>
 
               <!-- Collapsible wrapper -->
-              <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                  <!-- Left links -->
-                  <ul class="navbar-nav w-100 justify-content-end">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarButtonsExample">
+                  <!-- center menu -->
+                  <ul class="navbar-nav align-items-center width-custom-menu">
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ url_for('index')}}">Présentation</a>
+                          <a class="nav-link" href="{{ url_for('index')}}">PRÉSENTATION</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link">Projets</a>
+                        <a class="nav-link">PROJETS</a>
                       </li>
                   </ul>
-                  <!-- Left links -->
-
-                  <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                      <!-- Icons -->
+                  <!-- End center menu -->
+                  
+                  <!-- Icons -->
+                  <ul class="nav navbar-nav align-items-center">
                       <li class="nav-item me-3 me-lg-0">
                           <a class="nav-link" href="#">
-                              <i class="bi bi-envelope fa-2x"></i>
+                              <i class="bi bi-envelope i-size-custom"></i>
                           </a>
                       </li>
                       <li class="nav-item me-3 me-lg-0">
                           <a class="nav-link" href="#">
-                              <i class="fab fa-linkedin text-white fa-2x"></i>
+                              <i class="fab fa-linkedin text-white i-size-custom"></i>
                           </a>
                       </li>
                       <li class="nav-item me-3 me-lg-0">
                           <a class="nav-link" href="#">
-                            <i class="fa-brands fa-github fa-2x"></i>
+                            <i class="fa-brands fa-github i-size-custom"></i>
                           </a>
                       </li>
                   </ul>
+                  <!-- End Icons -->
               </div>
               <!-- Collapsible wrapper -->
           </div>
           <!-- Container wrapper -->
         </nav>
-        <!-- Navbar -->
+        <!-- END Navbar -->
       </header>
       <div id="main">
         <div>{% block content %} {% endblock %}</div>
