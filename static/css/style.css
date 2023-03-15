@@ -64,13 +64,24 @@ a {
 /* END FOOTER */
 
 /* index page style */
-.space-row-5 {
-  height: 5em;
-}
 
 .space-row-2 {
   height: 2em;
 }
+
+/* div left index */
+
+.vertical-title {
+  font-family: 'Michroma', sans-serif;
+  color: #fff !important; 
+  letter-spacing: .5rem;
+}
+
+.welcome-span-color-word {
+  color: var(--second-highlight-color);  
+}
+
+/* end div left index */
 
 /* div center */
 .h1-span-color-letter {
