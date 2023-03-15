@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% block title %}Bienvenue sur BDB{% endblock %}
 {% block content %}
     <div class="container">
         <div class="row space-row-5">
@@ -10,18 +10,25 @@
           </div>
           <div class="col-lg-1"></div>
           <div class="col-lg-5">
-            <h1>{% block title %} BARBARA DI BATTISTA DÉVELOPPEUSE FULL STACK {% endblock %}</h1>
+            <h1>
+                <span class="h1-span-color-letter">B</span>ARBARA 
+                <span class="h1-span-color-letter">D</span>I 
+                <span class="h1-span-color-letter">B</span>ATTISTA DÉVELOPPEUSE FULL STACK 
+            </h1>
             <div row class="space-row-2"></div>
             <div class="d-flex flex-row">
-                <div class="p-2"># Détermination</div>
-                <div class="p-2"># Collaboration</div>
-                <div class="p-2"># Rigueur</div>
+                <div class="p-2">#Détermination</div>
+                <div class="p-2"><span class="div-span-strength-color">#Collaboration</span></div>
+                <div class="p-2">#Rigueur</div>
             </div>
           </div>
           <div class="col-lg-4">
-            <p>Développeuse full-stack freelance, je suis passionnée par la résolution de problèmes. À l' écoute, je clarifie le besoin et analyse les possibilités pour trouver une solution créative.
-                Forte de cette expérience j’ai acquis un réel bagage et une vue d’ensemble de la culture informatique.
-                J’ai pu aussi identifier les points essentiels de ma trajectoire professionnelle d'où le choix de me focaliser sur le backend.
+            <p>Développeuse full-stack <span class="p-about-word-color">freelance</span>, je suis passionnée par la 
+                <span class="p-about-word-color">résolution de problèmes</span>.<br>
+                À <span class="p-about-word-color">l'écoute</span>, je <span class="p-about-word-color">clarifie</span> le besoin et <span class="p-about-word-color">analyse</span> 
+                les possibilités pour trouver une <span class="p-about-word-color">solution créative</span>.<br>
+                Forte de cette expérience j’ai acquis un réel bagage et une <span class="p-about-word-color">vue d’ensemble</span> de la culture informatique.<br>
+                J’ai pu aussi identifier les points essentiels de ma trajectoire professionnelle d'où le choix de me focaliser sur le <span class="p-about-word-color">backend</span>.
             </p>
             <button type="button" class="btn btn-sm button-cv"><span class="bi bi-download"></span>&nbsp;Mon cv</button>
           </div>
