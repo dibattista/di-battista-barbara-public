@@ -60,17 +60,19 @@ a {
   height: 2em;
 }
 
-.vertical-title {
-  writing-mode: rl-tb;
-  writing-mode:tb-rl;
-  -webkit-transform:rotate(180deg);
-  -moz-transform:rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform:rotate(180deg);
-  transform: rotate(180deg);
-}
-
 /* div right index */
 .button-cv {
   background-color: #DCAAA0 !important;
+}
+
+@media only screen and (min-width: 900px) {
+  .vertical-title {
+    writing-mode: rl-tb;
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
