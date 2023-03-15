@@ -22,7 +22,6 @@ ul {
     margin-bottom: 0;
 }
 
-/* Modify brand and text color */
 li > a {
 	color: white !important;
 }
@@ -51,6 +50,19 @@ a {
   color: #fff !important;  
 }
 
+/* Custom properties/ CSS variables */
+:root {
+  --main-highlight-color: #DCAAA0;
+  --second-highlight-color: #121F44;
+}
+/* END - Custom properties/ CSS variables */
+
+/* FOOTER */
+.footer-copyright {
+  font-size: 0.8em;
+}
+/* END FOOTER */
+
 /* index page style */
 .space-row-5 {
   height: 5em;
@@ -60,11 +72,27 @@ a {
   height: 2em;
 }
 
-/* div right index */
-.button-cv {
-  background-color: #DCAAA0 !important;
+/* div center */
+.h1-span-color-letter {
+ color: var(--main-highlight-color); 
 }
 
+.div-span-strength-color {
+  color: var(--second-highlight-color);  
+}
+
+/* div right index */
+.button-cv {
+  background-color: var(--main-highlight-color) !important;
+}
+
+.p-about-word-color {
+  color: var(--second-highlight-color);  
+} 
+/* END INDEX */
+
+
+/* MEDIA */
 @media only screen and (min-width: 900px) {
   .vertical-title {
     writing-mode: rl-tb;
