@@ -47,7 +47,7 @@ h3 {
 a {
   font-family: 'Tomorrow', sans-serif;
   font-weight: 400;
-  color: #fff !important;  
+  color: #fff !important;
 }
 
 /* Custom properties/ CSS variables */
@@ -63,10 +63,23 @@ a {
 }
 /* END FOOTER */
 
+/* base page style */
+.i-size-custom {
+  font-size: 1.4em;
+}
+
+.width-custom-menu {
+  width: 56%!important;
+}
+
 /* index page style */
 
 .space-row-2 {
   height: 2em;
+}
+
+.space-row-5 {
+  height: 5em;
 }
 
 /* div left index */
