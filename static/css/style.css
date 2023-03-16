@@ -52,8 +52,12 @@ a {
 
 /* Custom properties/ CSS variables */
 :root {
-  --main-highlight-color: #DCAAA0;
-  --second-highlight-color: #121F44;
+  /* --main-highlight-color: #DCAAA0; */
+  --second-highlight-color: rgb(99, 243, 249);
+  --main-highlight-color: #0B4F6F; 
+  --third-highlight-color: #DCAAA0;
+  /* --second-highlight-color: #121F44; */
+  /* --second-highlight-color: #E5FF30; */
 }
 /* END - Custom properties/ CSS variables */
 
@@ -64,7 +68,7 @@ a {
 
 .nav__link--active,
 .nav__link:hover {
-  border-bottom: solid 2px var(--main-highlight-color); 
+  border-bottom: solid 2px var(--second-highlight-color); 
 }
 
 /* END NAVBAR */
@@ -113,6 +117,9 @@ a {
 .h1-span-color-letter {
  color: var(--main-highlight-color); 
 }
+.h1-span-color2-letter {
+  color: var(--third-highlight-color);  
+}
 
 .div-span-strength-color {
   color: var(--second-highlight-color);  
@@ -120,12 +127,25 @@ a {
 
 /* div right index */
 .button-cv {
-  background-color: var(--main-highlight-color) !important;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+  /* box-shadow: 0.5rem 0.5rem rgb(99, 243, 249, 0.25); */
+  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  /* border: 2px solid var(--second-highlight-color) !important; */
+  color : #fff !important; 
+  --bs-btn-line-height: 0.5 !important;
+  --bs-btn-font-size: 1.00rem !important;
+}
+
+.button-cv:hover {
+  background-color: var(--second-highlight-color) !important;
+  color: #121F44 !important;
 }
 
 .p-about-word-color {
   color: var(--second-highlight-color);  
 } 
+
 /* END INDEX */
 
 
