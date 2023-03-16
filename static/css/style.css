@@ -57,6 +57,18 @@ a {
 }
 /* END - Custom properties/ CSS variables */
 
+/* NAVBAR */
+.nav__navigation {
+  padding: 0.7em;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  border-bottom: solid 2px var(--main-highlight-color); 
+}
+
+/* END NAVBAR */
+
 /* FOOTER */
 .footer-copyright {
   font-size: 0.8em;
@@ -69,7 +81,7 @@ a {
 }
 
 .width-custom-menu {
-  width: 56%!important;
+  width: 58%!important;
 }
 
 /* index page style */
@@ -81,6 +93,7 @@ a {
 .space-row-5 {
   height: 5em;
 }
+/* END index page style */
 
 /* div left index */
 
