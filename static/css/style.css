@@ -74,10 +74,22 @@ a {
 .i-github-color {
   color: var(--second-color); 
 }
+.nav-link:hover .i-github-color {
+  color: var(--main-highlight-color) !important; 
+}
+
+.nav-link:hover .fa-linkedin-in {
+  color: var(--main-highlight-color) !important; 
+}
+
+.nav-link:hover {
+	color: var(--main-highlight-color) !important;
+}
 
 .width-custom-menu {
   width: 58%!important;
 }
+
 /* END NAVBAR */
 
 /* FOOTER */
@@ -152,4 +164,35 @@ a {
     -ms-transform:rotate(180deg);
     transform: rotate(180deg);
   }
+}
+
+/* responsive mobile and tablette */
+@media screen and (max-width: 900px) {  
+  /* ON CLICK TOGGLE BUTTON ADD THE BACKGROUND BLUR FOR THE MAIN DIV TO SEE ONLY THE MENU */
+  .background-blur {
+    background: var(--main-color);
+    filter: blur(5px) brightness(1.0);
+  }
+  /* END on click */
+
+  /* menu toggle */
+  .width-custom-menu {
+    width: 100%!important;
+  }
+
+  ul.nav.custom-social-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-collapse {
+    margin-bottom: 2rem;
+  }
+  /* END menu toggle */
+
+  /* index */
+  .responsive-space-row {
+    height: 0;
+  }
+  /*END index */
 }
