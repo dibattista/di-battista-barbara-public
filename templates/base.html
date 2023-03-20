@@ -41,13 +41,19 @@
         <!-- Container wrapper -->
         <div class="container">
           <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg">
+          <nav class="navbar navbar-dark navbar-expand-lg">
                 <a class="navbar-brand" href="{{ url_for('index')}}">
                   <img src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="80" height="80" alt=''>
                 </a>
 
                 <!-- Toggle button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler click" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarButtonsExample" 
+                        aria-controls="navbarButtonsExample" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
                     <i class="navbar-toggler-icon"></i>
                 </button>
 
@@ -71,24 +77,24 @@
                     <!-- End center menu -->
                     
                     <!-- Icons -->
-                    <ul class="nav navbar-nav align-items-center">
-                        <li class="nav-item me-3 me-lg-0">
+                    <ul class="nav navbar-nav align-items-center custom-social-nav">
+                        <li class="nav-item me-4 me-lg-0">
                             <a class="nav-link" href="mailto: barbaradibattista@yahoo.fr">
                                 <i class="bi bi-envelope i-size-custom"></i>
                             </a>
                         </li>
-                        <li class="nav-item me-3 me-lg-0">
+                        <li class="nav-item me-4 me-lg-0">
                             <a class="nav-link" 
                             href="https://www.linkedin.com/in/barbara-di-battista-710521b3/"
                             target="_blank">
-                                <i class="fab fa-linkedin text-white i-size-custom"></i>
+                                <i class="fab fa-linkedin-in text-white i-size-custom"></i>
                             </a>
                         </li>
                         <li class="nav-item me-3 me-lg-0">
                             <a class="nav-link" 
                             href="https://github.com/dibattista"
                             target="_blank">
-                              <i class="fa-brands fa-github i-size-custom i-github-color"></i>
+                              <i class="fab fa-github i-size-custom i-github-color"></i>
                             </a>
                         </li>
                     </ul>
@@ -110,6 +116,19 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
+      // listen click on navbar-toggler
+      document.querySelector('.click').addEventListener('click', (e) => {
+        // check if the aria-expanded is true 
+        const ariaTRUE = document.querySelector('button[aria-expanded="true"]'); 
+        if(!!ariaTRUE) {
+          // If is true add class background-blur to main div, because we want to see only the menu
+          var mainElement = document.querySelector("#main");
+          mainElement.classList.add("background-blur");
+        } else {
+          // remove the background blur because we want to see the all the main div
+          document.querySelector(".background-blur").classList.remove("background-blur");
+        }
+      });
     </script>
   </body>
 </html>
