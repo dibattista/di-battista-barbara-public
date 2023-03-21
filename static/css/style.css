@@ -152,6 +152,24 @@ a {
 /* END div right index */ 
 /* END PAGE INDEX */
 
+/* PAGE PROJETS */
+.background-img-tab-content {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-image: url(../images/background-blue-gradient-bdb.png);
+  /* Full height */
+    height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  max-width: 100% !important; 
+}
+
+.h1-projet-1, .p-projet-1 {
+  color: var(--main-color) !important;
+}
+/* END PAGE PROJETS */
 
 /* MEDIA */
 @media only screen and (min-width: 900px) {
