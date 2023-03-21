@@ -37,6 +37,7 @@ p, .p-2 {
   font-family: 'Tomorrow', sans-serif;
   font-weight: 400;
   color: #fff;
+  margin: 0 !important;
 }
 
 h1 {
@@ -152,6 +153,15 @@ a {
 /* END div right index */ 
 /* END PAGE INDEX */
 
+/* PAGE PROJETS */
+.h1-projet-1, .p-projet-1 {
+  color: var(--main-color) !important;
+}
+
+a:hover .bi-box-arrow-up-right {
+  color: var(--main-highlight-color) !important; 
+}
+/* END PAGE PROJETS */
 
 /* MEDIA */
 @media only screen and (min-width: 900px) {

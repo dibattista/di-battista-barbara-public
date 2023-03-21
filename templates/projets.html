@@ -1,10 +1,148 @@
 {% extends 'base.html' %}
 
+{% block title %}Projets BDB{% endblock %}
 {% block content %}
-    <div id="main-div-left"></div>
-    <div id="main-div-center">
-        <h1>{% block title %} PROJETS {% endblock %}</h1>
+    <div class="container">
+        <div class="row space-row-2">
+        </div>
+        <div class="row">
+          <div class="col-1 d-flex justify-content-center">
+            <img src="{{url_for('static', filename='/images/line-gradient-bdb.png')}}" alt=''>
+          </div>
+          <div class="col-10">
+            <!-- Tab content -->
+            <div class="tab-content p-3 background-img-tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-link1"
+                role="tabpanel"
+                aria-labelledby="v-pills-link1-tab"
+              >
+                <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-6">
+                    <h1 class="h1-projet-1">INFINITY</h1>
+                    <h1 class="h1-projet-1">INNOVATION</h1>
+                    <div row class="space-row-2"></div>
+                    <P class="p-projet-1">1 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Est, excepturi illo neque eaque error corrupti laborum alias
+                      veniam natus molestias in cupiditate magnam ratione voluptatem!
+                    </P>
+                    <div row class="space-row-2"></div>
+                    <div class="d-flex flex-row align-items-center">
+                      <div class="p-2"><span class="div-span-strength-color">VueJs - NuxtJs</span></div>
+                      <div class="p-2"><p>JavaScript</p></div>
+                      <div class="p-2"><p>PHP</p></div>
+                      <div class="p-2"><p>CSS</p></div>
+                      <div class="p-2">
+                        <a href="https://www.infinity-innovation.fr" target="_blank">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5"></div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-link2"
+                role="tabpanel"
+                aria-labelledby="v-pills-link2-tab"
+              >
+                <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-6">
+                    <h1 class="h1-projet-1">VOTRE</h1>
+                    <h1 class="h1-projet-1">REFLEXOLOGUE</h1>
+                    <div row class="space-row-2"></div>
+                    <P class="p-projet-1">2 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Est, excepturi illo neque eaque error corrupti laborum alias
+                      veniam natus molestias in cupiditate magnam ratione voluptatem!
+                    </P>
+                    <div row class="space-row-2"></div>
+                    <div class="d-flex flex-row align-items-center">
+                      <div class="p-2"><p>JavaScript</p></div>
+                      <div class="p-2"><p>PHP</p></div>
+                      <div class="p-2"><p>CSS</p></div>
+                      <div class="p-2"><span class="div-span-strength-color">HTML</span></div>
+                      <div class="p-2">
+                        <a href="https://votre-reflexologue.com/" target="_blank">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5"></div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-link3"
+                role="tabpanel"
+                aria-labelledby="v-pills-link3-tab"
+              >
+                <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-6">
+                    <h1 class="h1-projet-1">OC</h1>
+                    <h1 class="h1-projet-1">PYTHON</h1>
+                    <div row class="space-row-2"></div>
+                    <P class="p-projet-1">3 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Est, excepturi illo neque eaque error corrupti laborum alias
+                      veniam natus molestias in cupiditate magnam ratione voluptatem!
+                    </P>
+                    <div row class="space-row-2"></div>
+                    <div class="d-flex flex-row align-items-center">
+                      <div class="p-2"><p>PYTHON</p></div>
+                      <div class="p-2"><span class="div-span-strength-color">HTML</span></div>
+                      <div class="p-2"><p>SQL</p></div>
+                      <div class="p-2">
+                        <a href="https://github.com/dibattista" target="_blank">
+                          <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <p class="vertical-title">- Click</p>           
+            <div
+              class="nav flex-column nav-pills text-center"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a 
+                class="nav-link active"
+                id="v-pills-link1-tab"
+                data-bs-toggle="pill"
+                href="#v-pills-link1"
+                role="tab"
+                aria-controls="v-pills-link1"
+                aria-expanded="true"><p class="vertical-title">01</p></a>
+              <a 
+                class="nav-link bg-info"
+                id="v-pills-link2-tab"
+                data-bs-toggle="pill"
+                href="#v-pills-link2"
+                role="tab"
+                aria-controls="v-pills-link2"
+                aria-expanded="false"><p class="vertical-title">02</p></a>
+              <a 
+                class="nav-link bg-info"
+                id="v-pills-link3-tab"
+                data-bs-toggle="pill"
+                href="#v-pills-link3"
+                role="tab"
+                aria-controls="v-pills-link3"
+                aria-expanded="false"><p class="vertical-title">03</p></a>
+            </div>
+          </div>
+        </div>
     </div>
-    <div id="main-div-right"></div>
-    <div></div>
 {% endblock %}
