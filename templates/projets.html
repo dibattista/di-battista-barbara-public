@@ -7,108 +7,80 @@
         </div>
         <div class="row gx-2">
           <div class="col-lg-1 d-flex justify-content-center">
-            <p class="vertical-title"><span class="welcome-span-color-word">Scroll</span>- next project</p>           
+            <p class="vertical-title"><span class="project-span-color-vertical">click</span>- next project</p>           
           </div>
           <div class="col-1"></div>
-          <div class="col-7 pt-4">
-            <div data-bs-spy="scroll"
-                 data-bs-target="#list-example" 
-                 data-bs-offset="0"
-                 id="custom-scrollspy" 
-                 class="scrollspy-example container-scrollable"
-                 tabindex="0">
-              <div id="list-item-1" class="row fixed-height-project-content fade show active bg-project-1 pb-4">
-                <div class="col-1"></div>
-                <div class="col-8">
-                    <h1 class="h1-projet-1">INFINITY</h1>
-                    <h1 class="h1-projet-1">INNOVATION</h1>
-                    <div class="space-row-2"></div>
-                    <P class="p-projet-1">1 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                          Est, excepturi illo neque eaque error corrupti laborum alias
-                          veniam natus molestias in cupiditate magnam ratione voluptatem!
-                    </P>
-                    <div class="d-flex flex-row align-items-center">
-                      <div class="p-2"><span class="div-span-strength-color">VueJs - NuxtJs</span></div>
-                      <div class="p-2"><p class="p-projet-1">JavaScript</p></div>
-                      <div class="p-2"><p class="p-projet-1">PHP</p></div>
-                      <div class="p-2"><p class="p-projet-1">CSS</p></div>
-                      <div class="p-2">
-                        <a href="https://www.infinity-innovation.fr" target="_blank">
-                          <i class="bi bi-box-arrow-up-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-3"></div>
+          <div class="col-7 bg-content-project p-5">
+            <!-- Tab content project -->
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="content-link1" role="tabpanel" aria-labelledby="content-link1-tab">
+                <h1 class="h1-projet-1">INFINITY</h1>
+                <h1 class="h1-projet-1">INNOVATION</h1>
+                <div class="row space-row-2"></div>
+                <P class="p-projet-1">1 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Est, excepturi illo neque eaque error corrupti laborum alias
+                  veniam natus molestias in cupiditate magnam ratione voluptatem!
+                </P>
+                <div class="row space-row-2"></div>
+                <ul>
+                  <li class="pe-3"><span class="div-span-strength-color">VueJs - NuxtJs</span></li>
+                  <li class="pe-3"><p>JavaScript</p></li>
+                  <li class="pe-3"><p>PHP</p></li>
+                  <li class="pe-3"><p>CSS</p></li>
+                  <li> 
+                    <a href="https://www.infinity-innovation.fr" target="_blank">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div id="list-item-2" class="row fixed-height-project-content bg-project-2 pb-4">
-                <div class="col-1"></div>
-                <div class="col-8 bg-success">
-                    <div class="space-row-2"></div>
-                    <h1 class="h1-projet-1">VOTRE</h1>
-                    <h1 class="h1-projet-1">RÉFLEXOLOGUE</h1>
-                    <div class="space-row-2"></div>
-                    <P class="p-projet-1">2 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Est, excepturi illo neque eaque error corrupti laborum alias
-                      veniam natus molestias in cupiditate magnam ratione voluptatem!
-                    </P>
-                    <div class="d-flex flex-row align-items-center">
-                      <div class="p-2"><p>JavaScript</p></div>
-                      <div class="p-2"><p>PHP</p></div>
-                      <div class="p-2"><p>CSS</p></div>
-                      <div class="p-2"><span class="div-span-strength-color">HTML</span></div>
-                      <div class="p-2">
-                        <a href="https://votre-reflexologue.com/" target="_blank">
-                          <i class="bi bi-box-arrow-up-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-3"></div>
+              <div class="tab-pane fade" id="content-link2" role="tabpanel" aria-labelledby="content-link2-tab">
+                2-This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
               </div>
-              <div id="list-item-3" class="row fixed-height-project-content bg-project-3 pb-4">
-                <div class="col-1"></div>
-                <div class="col-8 bg-success">
-                  <div class="space-row-2"></div>
-                  <h1 class="h1-projet-1">OC</h1>
-                  <h1 class="h1-projet-1">PYTHON</h1>
-                  <div class="space-row-2"></div>
-                  <P class="p-projet-1">3 -Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Est, excepturi illo neque eaque error corrupti laborum alias
-                      veniam natus molestias in cupiditate magnam ratione voluptatem!
-                  </P>
-                  <div class="d-flex flex-row align-items-center">
-                    <div class="p-2"><p>PYTHON</p></div>
-                    <div class="p-2"><span class="div-span-strength-color">HTML</span></div>
-                    <div class="p-2"><p>SQL</p></div>
-                    <div class="p-2">
-                      <a href="https://github.com/dibattista" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3"></div>
-              </div> 
+              <div class="tab-pane fade" id="content-link3" role="tabpanel" aria-labelledby="content-link3-tab">
+                3-This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.
+              </div>
             </div>
+            <!-- END Tab content project --> 
           </div>
-          <div class="col-1 pt-4">
-            <div id="list-example" class="list-group">
-                  <a class="list-group-item list-group-item-action list-project active list-project-1" href="#list-item-1">
-                    <p class="h6 p-2">01</p>
-                    <div class="bg-danger vertical-title-project" style="height: 3px; width: 100%;"></div>
-                  </a>
-                  <div class="row space-row-2"></div>
-                  <a class="list-group-item list-group-item-action list-project list-project-2" href="#list-item-2">
-                    <p class="h6 p-2">HTML</p>
-                    <div class="bg-danger vertical-title-project" style="height: 3px; width: 100%;"></div>
-                  </a>
-                  <div class="row space-row-2"></div>
-                  <a class="list-group-item list-group-item-action list-project list-project-3" href="#list-item-3">
-                    <p class="h6 p-2">PYTHON</p>
-                    <div class="bg-danger vertical-title-project" style="height: 3px; width: 100%;"></div>
-                  </a>
-            </div>
+          <div class="col-2">
+            <!-- Tab navs projects -->
+            <ul class="nav nav-tabs flex-column pt-5" id="myTab" role="tablist" aria-orientation="vertical">
+              <li class="nav-item">
+                <a 
+                  class="nav-link active mb-2" 
+                  id="content-link1-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#content-link1" 
+                  role="tab" 
+                  aria-controls="content-link1" 
+                  aria-selected="true">
+                  <p>VueJs -</p>
+                  <p>Infinity Innovation</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link mb-2" 
+                  id="content-link2-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#content-link2" 
+                  role="tab" 
+                  aria-controls="content-link2" 
+                  aria-selected="false">2</a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link" 
+                  id="content-link3-tab" 
+                  data-bs-toggle="tab" 
+                  data-bs-target="#content-link3"
+                  role="tab" 
+                  aria-controls="content-link2" 
+                  aria-selected="false">3</a>
+              </li>
+            </ul>
+             <!-- END Tab navs projects -->
           </div>
           <div class="col-1"></div>
         </div>

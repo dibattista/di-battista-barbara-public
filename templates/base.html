@@ -43,7 +43,7 @@
           <!-- Navbar -->
           <nav class="navbar navbar-dark navbar-expand-lg">
                 <a class="navbar-brand" href="{{ url_for('index')}}">
-                  <img src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="80" height="80" alt=''>
+                  <img class="img-navbar-brand" src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="80" height="80" alt=''>
                 </a>
 
                 <!-- Toggle button -->
@@ -129,50 +129,14 @@
           document.querySelector(".background-blur").classList.remove("background-blur");
         }
       });
-      document.querySelector('.container-scrollable').addEventListener("scroll", function () {
-        console.log('ICI SCROLL');
-        var body = document.getElementsByTagName('body')[0];
-        var list1Active = document.activeElement.querySelector('.list-project-1');
-        var list2Active = document.activeElement.querySelector('.list-project-2');
-        var list3Active = document.activeElement.querySelector('.list-project-3');
-        if (list1Active) {
-          console.log('in list1');
-          body.style.backgroundImage = "url('static/images/background-blue-gradient-bdb.png')";
+      // change logo in project page
+        if (window.history) {
+          var pageUrl = window.location.href;
+          if(pageUrl === 'http://127.0.0.1:5000/projets') {
+            console.log('ICI')
+            document.querySelector(".img-navbar-brand").src = "{{url_for('static', filename='/images/logo-project1-bdb.png')}}";
+          }
         }
-        else if (list2Active) {
-          console.log('in list2');
-          body.style.backgroundImage = "url('static/images/background-orange-gradient-bdb.png')";
-        }
-        else if (list3Active) {
-          console.log('in list3');
-          body.style.backgroundImage = "url('static/images/background-black-gradient-bdb.png')";
-
-        } else body.style.backgroundImage = "url('static/images/background-home-bdb.png')";
-      });
-      // Page projets - Scrollspy bug - solution bootstrap/issues/32496 - thanks
-      function hotfixScrollSpy() {
-        var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-        let curScroll = getCurrentScroll();
-        dataSpyList.forEach(function (dataSpyEl) {
-          let offsets = bootstrap.ScrollSpy.getInstance(dataSpyEl)['_offsets'];
-            for(let i = 0; i < offsets.length; i++){
-                offsets[i] += curScroll;
-            }
-          })
-      }
-
-      function getCurrentScroll() {
-          return window.pageYOffset || document.documentElement.scrollTop;
-      }
-      window.onload = function () {
-        hotfixScrollSpy();
-        window.scrollBy(0,1);
-      }
-
-      // document.querySelector('.list-project-3').addEventListener("click", function () {
-      //   var body = document.getElementsByTagName('body')[0];
-      //   body.style.backgroundImage = "url('static/images/background-black-gradient-bdb.png')"; 
-      // });
     </script>
   </body>
 </html>

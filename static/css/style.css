@@ -34,7 +34,7 @@ li > a {
 ul {
     list-style: none;
     display: flex;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 p, .p-2 {
@@ -121,7 +121,7 @@ a {
 }
 
 .welcome-span-color-word {
-  color: var(--main-color);  
+  color: var(--second-color);  
 }
 /* END div left index */
 
@@ -158,29 +158,16 @@ a {
 /* END PAGE INDEX */
 
 /* PAGE PROJETS */
-.container-scrollable {
-  height: 50vh;
-  overflow-y: scroll;
-  overflow-x: hidden; /* Hide vertical scrollbar */
-  position: relative;
-  scrollbar-color: var(--main-color) transparent;
-}
 
-/* .bg-project-1 {
-  background-image: url('/static/images/background-blue-gradient-bdb.png');
-}
-.bg-project-2 {
-  background-image: url('/static/images/background-orange-gradient-bdb.png');
-}
-.bg-project-3 {
-  background-image: url('/static/images/background-black-gradient-bdb.png');
-} */
-
-.fixed-height-project-content {
-  height: 100%; 
-}
 .h1-projet-1, .p-projet-1 {
   color: white!important;
+}
+
+.bi-box-arrow-up-right {
+  color: var(--second-color) !important; 
+}
+.project-span-color-vertical {
+  color: var(--second-color);
 }
 
 a:hover .bi-box-arrow-up-right {
@@ -193,45 +180,51 @@ a:hover .bi-box-arrow-up-right {
   letter-spacing: .5rem;
 }
 
-.vertical-title-project {
-  writing-mode: rl-tb;
-  writing-mode:tb-rl;
-  -webkit-transform:rotate(90deg);
-  -moz-transform:rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform:rotate(90deg);
-  transform: rotate(90deg);
-}
 
 /* ! custom boostrap general style !*/
-.list-group-item.active {
-  background-color: transparent !important;
-  color: var(--main-highlight-color) !important;
-  border-color: white !important;
-}
-.list-group-item:hover {
+
+.nav-link.active {
   background-color: transparent !important;
 }
 
-.list-group-item:hover p {
-  color: var(--main-highlight-color) !important;
+.nav-tabs {
+  --bs-nav-tabs-border-color: transparent !important;
 }
 
-.list-group {
-  --bs-list-group-bg: transparent !important;
-}
-
-.list-group-item {
+.nav-tabs .nav-link {
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
   border-bottom: 0 !important;
+  border-radius: 10px !important;
+  /* background-color: var(--main-color) !important; */
+  /*box-shadow: inset  3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/
+  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
 }
 
-.list-group-item.list-project {
-  border-bottom-right-radius: unset !important;
-  border-bottom-left-radius: unset !important;
+.nav-tabs .nav-link:hover {
+  box-shadow:  3px 3px 6px #1B4456, -3px -3px 6px #1B4657;
 }
+.nav-tabs .nav-link.nav-link.active {
+  box-shadow:  3px 3px 6px #1B4456, -3px -3px 6px #1B4657;
+}
+
+.bg-content-project {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-image: url(../images/background-home-bdb.png);
+  /* Full height */
+    height: 57vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  max-width: 100% !important;
+  border-radius: 10px !important;
+  /*box-shadow: 3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/
+  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+}
+
 /* END ! custom boostrap general style !*/
 /* END PAGE PROJETS */
 
