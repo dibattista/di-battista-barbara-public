@@ -122,7 +122,7 @@ a {
 }
 
 .welcome-span-color-word {
-  color: var(--second-color);  
+  color: var(--main-color);  
 }
 /* END div left index */
 
@@ -168,7 +168,7 @@ a {
   color: var(--second-color) !important; 
 }
 .project-span-color-vertical {
-  color: var(--second-color);
+  color: var(--main-color);
 }
 
 a:hover .bi-box-arrow-up-right {
