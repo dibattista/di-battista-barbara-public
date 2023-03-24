@@ -1,3 +1,6 @@
+html {
+  overflow: hidden;
+}
 body, html {
     height: 100%;
   }
@@ -18,8 +21,10 @@ body {
 /* Custom properties/ CSS variables */
 :root {
   --main-color: #0B4F6F;
-  --second-color: #DCAAA0;
+  /* --second-color: #DCAAA0; */
+  --second-color: #D2687F;
   --main-highlight-color: rgb(99, 243, 249);
+  --gradient-scroll : linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 /* END - Custom properties/ CSS variables */
 
@@ -30,7 +35,7 @@ li > a {
 ul {
     list-style: none;
     display: flex;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 p, .p-2 {
@@ -117,7 +122,7 @@ a {
 }
 
 .welcome-span-color-word {
-  color: var(--main-color);  
+  color: var(--second-color);  
 }
 /* END div left index */
 
@@ -154,13 +159,74 @@ a {
 /* END PAGE INDEX */
 
 /* PAGE PROJETS */
+
 .h1-projet-1, .p-projet-1 {
-  color: var(--main-color) !important;
+  color: white!important;
+}
+
+.bi-box-arrow-up-right {
+  color: var(--second-color) !important; 
+}
+.project-span-color-vertical {
+  color: var(--second-color);
 }
 
 a:hover .bi-box-arrow-up-right {
   color: var(--main-highlight-color) !important; 
 }
+
+.number-tab-project {
+  font-family: 'Michroma', sans-serif;
+  color: #fff !important; 
+  letter-spacing: .5rem;
+}
+
+
+/* ! custom boostrap general style !*/
+
+.nav-link.active {
+  background-color: transparent !important;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-color: transparent !important;
+}
+
+.nav-tabs .nav-link {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 10px !important;
+  /* background-color: var(--main-color) !important; */
+  /*box-shadow: inset  3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/
+  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+}
+
+.nav-tabs .nav-link:hover {
+  box-shadow:  3px 3px 6px #1B4456, -3px -3px 6px #1B4657;
+}
+.nav-tabs .nav-link.nav-link.active {
+  box-shadow:  3px 3px 6px #1B4456, -3px -3px 6px #1B4657;
+}
+
+.bg-content-project {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-image: url(../images/background-home-bdb.png);
+  /* Full height */
+    height: 57vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  max-width: 100% !important;
+  border-radius: 10px !important;
+  /*box-shadow: 3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/
+  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+}
+
+/* END ! custom boostrap general style !*/
 /* END PAGE PROJETS */
 
 /* MEDIA */

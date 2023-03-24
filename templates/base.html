@@ -43,7 +43,7 @@
           <!-- Navbar -->
           <nav class="navbar navbar-dark navbar-expand-lg">
                 <a class="navbar-brand" href="{{ url_for('index')}}">
-                  <img src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="80" height="80" alt=''>
+                  <img class="img-navbar-brand" src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="80" height="80" alt=''>
                 </a>
 
                 <!-- Toggle button -->
@@ -129,6 +129,14 @@
           document.querySelector(".background-blur").classList.remove("background-blur");
         }
       });
+      // change logo in project page
+        if (window.history) {
+          var pageUrl = window.location.href;
+          if(pageUrl === 'http://127.0.0.1:5000/projets') {
+            console.log('ICI')
+            document.querySelector(".img-navbar-brand").src = "{{url_for('static', filename='/images/logo-project1-bdb.png')}}";
+          }
+        }
     </script>
   </body>
 </html>
