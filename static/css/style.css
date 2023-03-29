@@ -22,8 +22,8 @@ body {
 :root {
   --main-color: #0B4F6F;
   /* --second-color: #DCAAA0; */
-  --second-color: #D2687F;
-  --main-highlight-color: rgb(99, 243, 249);
+  --second-color: #d74864;
+  --main-highlight-color: #63f3f9;
   --gradient-scroll : linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 /* END - Custom properties/ CSS variables */
