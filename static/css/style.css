@@ -46,6 +46,7 @@ h1 {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   color: #fff !important;
+  text-shadow: 2px 1px var(--main-highlight-color);
 }
 
 h3 {
@@ -134,9 +135,12 @@ footer{
 /* END div left index */
 
 /* div center */
-.h1-span-color-letter {
- color: var(--main-color); 
+.h1-span-color-letter-d {
+ color: var(--main-highlight-color); 
 }
+.h1-span-color-letter-b {
+  color: rgb(var(--main-color)); 
+ }
 .h1-span-color2-letter {
   color: var(--second-color);  
 }
@@ -173,7 +177,6 @@ footer{
 
 .h1-projet-1 {
   color: #fff !important;
-  text-shadow: 2px 1px var(--main-highlight-color);
 }
 .p-projet-1 {
   color: rgb(var(--main-color)) !important;
@@ -222,6 +225,10 @@ a:hover .bi-box-arrow-up-right {
 }
 .nav-tabs .nav-link.nav-link.active {
   box-shadow:  3px 3px 6px #1B4456, -3px -3px 6px #1B4657;
+}
+
+.nav-tabs .nav-link.nav-link.active h6 {
+  color: var(--main-highlight-color);
 }
 
 .bg-content-project {
