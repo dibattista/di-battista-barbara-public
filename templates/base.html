@@ -43,7 +43,7 @@
           <!-- Navbar -->
           <nav class="navbar navbar-dark navbar-expand-lg">
                 <a class="navbar-brand" href="{{ url_for('index')}}">
-                  <img class="img-navbar-brand" src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="80" height="80" alt=''>
+                  <img class="img-navbar-brand" src="{{url_for('static', filename='/images/logo-bdb.png')}}" width="70" height="70" alt=''>
                 </a>
 
                 <!-- Toggle button -->
@@ -80,14 +80,14 @@
                     <ul class="nav navbar-nav align-items-center custom-social-nav">
                         <li class="nav-item me-4 me-lg-0">
                             <a class="nav-link" href="mailto: barbaradibattista@yahoo.fr">
-                                <i class="bi bi-envelope i-size-custom"></i>
+                                <i class="bi bi-envelope bi-envelope-color i-size-custom"></i>
                             </a>
                         </li>
                         <li class="nav-item me-4 me-lg-0">
                             <a class="nav-link" 
                             href="https://www.linkedin.com/in/barbara-di-battista-710521b3/"
                             target="_blank">
-                                <i class="fab fa-linkedin-in text-white i-size-custom"></i>
+                                <i class="fab fa-linkedin-in fa-linkedin-in-color i-size-custom"></i>
                             </a>
                         </li>
                         <li class="nav-item me-3 me-lg-0">
@@ -132,14 +132,6 @@
           document.querySelector(".background-blur").classList.remove("background-blur");
         }
       });
-      // change logo in project page
-        if (window.history) {
-          var pageUrl = window.location.href;
-          if(pageUrl === 'http://127.0.0.1:5000/projets') {
-            console.log('ICI')
-            document.querySelector(".img-navbar-brand").src = "{{url_for('static', filename='/images/logo-project1-bdb.png')}}";
-          }
-        }
     </script>
   </body>
 </html>
