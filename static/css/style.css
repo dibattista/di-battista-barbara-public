@@ -76,11 +76,17 @@ a {
   border-bottom: solid 2px var(--main-highlight-color); 
 }
 .i-size-custom {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
-.fa-linkedin-in-color,
-.bi-envelope-color,
+.bi-envelope-color {
+  color: #fff; 
+}
+
+.fa-linkedin-in-color {
+  color: #fff;
+}
+
 .i-github-color {
   color: rgb(var(--second-color)); 
 }
@@ -248,7 +254,8 @@ a:hover .i-highlight-color {
   height: 57vh;
   max-width: 100% !important;
   border-radius: 10px !important;
-  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+  /* box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px; */
+  box-shadow: rgb(var(--main-color)) 0px 20px 30px -10px;
 }
 
 /* END ! custom boostrap general style !*/
@@ -291,9 +298,25 @@ a:hover .i-highlight-color {
   }
   /* END menu toggle */
 
-  /* index */
+  /* PAGE BASE */
+  .responsive-div-space {
+    height: 20rem;
+  }
+  /* END PAGE BASE */
+
+  /* PAGE INDEX */
   .responsive-space-row {
     height: 0;
   }
-  /*END index */
+  /* END PAGE INDEX */
+
+  /* PAGE PROJET */
+  .nav-tabs .nav-link.nav-link.active h6 {
+    color: rgb(var(--main-color));
+  }
+
+  .div-space-project {
+    height: 5rem;
+  }
+  /* END PAGE PROJET */
 }
