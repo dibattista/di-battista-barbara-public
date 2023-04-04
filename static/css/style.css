@@ -1,29 +1,25 @@
 html {
-  overflow: hidden;
-}
-body, html {
-    height: 100%;
+    position: relative;
+    min-height: 100vh;
   }
 
-body {
-    padding: 0 !important;
+#container {
+    min-height: 100vh;
     margin: 0 !important;
+    padding-bottom: 36px;
     background-image: url(../images/background-home-bdb.png);
-    /* Full height */
-      height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
     max-width: 100% !important;
 }
 
 /* Custom properties/ CSS variables */
 :root {
-  --main-color: #0B4F6F;
-  /* --second-color: #DCAAA0; */
-  --second-color: #D2687F;
-  --main-highlight-color: rgb(99, 243, 249);
+  --main-color: 11,79,111;
+  --second-color: 248,10,153;
+  --main-highlight-color: #63f3f9;
   --gradient-scroll : linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 /* END - Custom properties/ CSS variables */
@@ -32,23 +28,29 @@ li > a {
 	color: #fff !important;
 }
 
+li {
+  color: #fff !important; 
+}
+
 ul {
     list-style: none;
     display: flex;
     margin-bottom: 0 !important;
+    padding: 0 !important;
 }
 
 p, .p-2 {
   font-family: 'Tomorrow', sans-serif;
   font-weight: 400;
-  color: #fff;
-  margin: 0 !important;
+  color: white;
+  /* margin: 0 !important; */
 }
 
 h1 {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   color: #fff !important;
+  text-shadow: 2px 1px var(--main-highlight-color);
 }
 
 h3 {
@@ -74,11 +76,19 @@ a {
   border-bottom: solid 2px var(--main-highlight-color); 
 }
 .i-size-custom {
-  font-size: 1.4em;
+  font-size: 1.2em;
+}
+
+.bi-envelope-color {
+  color: #fff; 
+}
+
+.fa-linkedin-in-color {
+  color: #fff;
 }
 
 .i-github-color {
-  color: var(--second-color); 
+  color: rgb(var(--second-color)); 
 }
 .nav-link:hover .i-github-color {
   color: var(--main-highlight-color) !important; 
@@ -88,7 +98,7 @@ a {
   color: var(--main-highlight-color) !important; 
 }
 
-.nav-link:hover {
+.nav-link:hover .bi-envelope {
 	color: var(--main-highlight-color) !important;
 }
 
@@ -97,8 +107,16 @@ a {
 }
 
 /* END NAVBAR */
-
+.-div-space {
+  height: 15vh;
+}
 /* FOOTER */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-copyright {
   font-size: 0.8em;
 }
@@ -106,10 +124,12 @@ a {
 /* END PAGE BASE */
 
 /* PAGE INDEX */
+.space-row-1 {
+  height: 1em;
+}
 .space-row-2 {
   height: 2em;
 }
-
 .space-row-5 {
   height: 5em;
 }
@@ -122,16 +142,19 @@ a {
 }
 
 .welcome-span-color-word {
-  color: var(--main-color);  
+  color: rgb(var(--main-color));  
 }
 /* END div left index */
 
 /* div center */
-.h1-span-color-letter {
- color: var(--main-color); 
+.h1-span-color-letter-d {
+  color: rgb(var(--second-color)); 
 }
+.h1-span-color-letter-b {
+  color: #fff; 
+ }
 .h1-span-color2-letter {
-  color: var(--second-color);  
+  color: rgb(var(--main-color));  
 }
 
 .div-span-strength-color {
@@ -141,15 +164,23 @@ a {
 
 /* div right index */
 .button-cv {
+  border: rgb(var(--second-color)) solid 1px !important;
   box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
-  color : #fff !important; 
+  background-color: rgba(var(--main-color), 0.8) !important;
   --bs-btn-line-height: 0.5 !important;
   --bs-btn-font-size: 1.00rem !important;
 }
 
 .button-cv:hover {
   background-color: var(--main-highlight-color) !important;
-  color: #121F44 !important;
+}
+
+.bi-download:hover {
+  color: rgb(var(--second-color));
+}
+
+.bi-download {
+  color: #fff;
 }
 
 .p-about-word-color {
@@ -160,19 +191,23 @@ a {
 
 /* PAGE PROJETS */
 
-.h1-projet-1, .p-projet-1 {
-  color: white!important;
+.h1-projet {
+  color: #fff !important;
+  text-shadow: 2px 1px rgb(var(--second-color));
+}
+.p-projet {
+  color: rgb(var(--main-color)) !important;
 }
 
-.bi-box-arrow-up-right {
-  color: var(--second-color) !important; 
+.i-highlight-color {
+  color: rgb(var(--second-color)) !important; 
 }
-.project-span-color-vertical {
-  color: var(--main-color);
-}
-
-a:hover .bi-box-arrow-up-right {
+a:hover .i-highlight-color {
   color: var(--main-highlight-color) !important; 
+}
+
+.project-span-color-vertical {
+  color: rgb(var(--main-color));
 }
 
 .number-tab-project {
@@ -198,9 +233,8 @@ a:hover .bi-box-arrow-up-right {
   border-right: 0 !important;
   border-bottom: 0 !important;
   border-radius: 10px !important;
-  /* background-color: var(--main-color) !important; */
-  /*box-shadow: inset  3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/
-  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+  /*box-shadow: inset  3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/ 
+  box-shadow: rgb(99, 243, 249) 0px 20px 30px -5px;
 }
 
 .nav-tabs .nav-link:hover {
@@ -210,27 +244,25 @@ a:hover .bi-box-arrow-up-right {
   box-shadow:  3px 3px 6px #1B4456, -3px -3px 6px #1B4657;
 }
 
+.nav-tabs .nav-link.nav-link.active h6 {
+  color: var(--main-highlight-color);
+}
+
 .bg-content-project {
   padding: 0 !important;
   margin: 0 !important;
-  background-image: url(../images/background-home-bdb.png);
-  /* Full height */
-    height: 57vh;
-  /* Center and scale the image nicely */
-  background-position: center;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
+  height: 57vh;
   max-width: 100% !important;
   border-radius: 10px !important;
-  /*box-shadow: 3px 3px 6px #1B4456, inset -3px -3px 6px #1B4657;*/
-  box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px;
+  /* box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px; */
+  box-shadow: rgb(var(--main-color)) 0px 20px 30px -10px;
 }
 
 /* END ! custom boostrap general style !*/
 /* END PAGE PROJETS */
 
 /* MEDIA */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 996px) {
   .vertical-title {
     writing-mode: rl-tb;
     writing-mode:tb-rl;
@@ -243,10 +275,10 @@ a:hover .bi-box-arrow-up-right {
 }
 
 /* responsive mobile and tablette */
-@media screen and (max-width: 900px) {  
+@media screen and (max-width: 996px) {  
   /* ON CLICK TOGGLE BUTTON ADD THE BACKGROUND BLUR FOR THE MAIN DIV TO SEE ONLY THE MENU */
   .background-blur {
-    background: var(--main-color);
+    background: rgb(var(--main-color));
     filter: blur(5px) brightness(1.0);
   }
   /* END on click */
@@ -266,9 +298,25 @@ a:hover .bi-box-arrow-up-right {
   }
   /* END menu toggle */
 
-  /* index */
+  /* PAGE BASE */
+  .responsive-div-space {
+    height: 20rem;
+  }
+  /* END PAGE BASE */
+
+  /* PAGE INDEX */
   .responsive-space-row {
     height: 0;
   }
-  /*END index */
+  /* END PAGE INDEX */
+
+  /* PAGE PROJET */
+  .nav-tabs .nav-link.nav-link.active h6 {
+    color: rgb(var(--main-color));
+  }
+
+  .div-space-project {
+    height: 5rem;
+  }
+  /* END PAGE PROJET */
 }
