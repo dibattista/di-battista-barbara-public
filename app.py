@@ -10,6 +10,10 @@ def index():
 def projets():
     return render_template('projets.html')
 
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
 # Download route
 @app.route('/download')
 def download():
