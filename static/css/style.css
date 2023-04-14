@@ -222,7 +222,10 @@ a:hover .i-highlight-color {
 
 
 /* ! custom boostrap general style !*/
-
+.nav-link{
+  cursor: pointer;
+}
+ 
 .nav-link.active {
   background-color: transparent !important;
 }
