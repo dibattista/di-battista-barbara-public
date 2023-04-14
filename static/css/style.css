@@ -168,6 +168,10 @@ footer{
   text-shadow: 2px 1px rgb(var(--main-color)); 
   letter-spacing: .1em; 
 }
+
+.col-about-title {
+  padding-right: 3rem !important;
+}
 /* END div center */
 
 /* div right index */
