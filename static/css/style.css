@@ -220,12 +220,18 @@ a:hover .i-highlight-color {
   letter-spacing: .5rem;
 }
 
+.size-p-nav-link {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  margin: 0 !important;
+}
 
 /* ! custom boostrap general style !*/
 .nav-link{
   cursor: pointer;
 }
- 
+
 .nav-link.active {
   background-color: transparent !important;
 }
@@ -253,7 +259,7 @@ a:hover .i-highlight-color {
   box-shadow: rgb(99, 243, 249) 3px 10px 10px -2px;
 }
 
-.nav-tabs .nav-link.nav-link.active h6 {
+.nav-tabs .nav-link.nav-link.active p {
   color: var(--main-highlight-color);
 }
 
@@ -333,7 +339,7 @@ a:hover .i-highlight-color {
   /* END PAGE INDEX */
 
   /* PAGE PROJET */
-  .nav-tabs .nav-link.nav-link.active h6 {
+  .nav-tabs .nav-link.nav-link.active p {
     color: rgb(var(--main-color));
   }
 
