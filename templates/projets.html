@@ -22,33 +22,19 @@
                       class="nav-link active mb-3" 
                       id="content-link1-tab" 
                       data-bs-toggle="tab" 
-                      data-bs-target="#content-link1" 
+                      data-bs-target="#content-link1"
                       role="tab" 
                       aria-controls="content-link1" 
-                      aria-selected="true">
-                      <h6>VUEJS</h6>
-                      <!-- <h6>Infinity Innovation</h6> -->
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a 
-                      class="nav-link mb-3"" 
-                      id="content-link2-tab" 
-                      data-bs-toggle="tab" 
-                      data-bs-target="#content-link2" 
-                      role="tab" 
-                      aria-controls="content-link2" 
                       aria-selected="false">
-                      <h6>HTML</h6>
-                      <!-- <h6>Votre réflexologue</h6> -->
+                      <h6>FLASK</h6>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a 
                       class="nav-link mb-3" 
-                      id="content-link3-tab" 
+                      id="content-link2-tab" 
                       data-bs-toggle="tab" 
-                      data-bs-target="#content-link3"
+                      data-bs-target="#content-link2"
                       role="tab" 
                       aria-controls="content-link2" 
                       aria-selected="false">
@@ -59,14 +45,30 @@
                   <li class="nav-item">
                     <a 
                       class="nav-link mb-3" 
+                      id="content-link3-tab" 
+                      data-bs-toggle="tab" 
+                      data-bs-target="#content-link3" 
+                      role="tab" 
+                      aria-controls="content-link3" 
+                      aria-selected="true">
+                      <h6>
+                        VUEJS
+                      </h6>
+                      <img class="img-navbar-brand" src="{{url_for('static', filename='/images/infinity.png')}}" width="40" height="30" alt=''>
+                      <!-- <h6>Infinity Innovation</h6> -->
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a 
+                      class="nav-link mb-3"" 
                       id="content-link4-tab" 
                       data-bs-toggle="tab" 
-                      data-bs-target="#content-link4"
+                      data-bs-target="#content-link4" 
                       role="tab" 
                       aria-controls="content-link4" 
                       aria-selected="false">
-                      <h6>CMS</h6>
-                      <!-- <h6>Multiple projets</h6> -->
+                      <h6>HTML</h6>
+                      <!-- <h6>Votre réflexologue</h6> -->
                     </a>
                   </li>
                   <li class="nav-item">
@@ -78,8 +80,9 @@
                       role="tab" 
                       aria-controls="content-link5" 
                       aria-selected="false">
-                      <h6>FLASK</h6>
-                      <!-- <h6>BDB</h6> -->
+                      <h6>CMS
+                      </h6>
+                      <!-- <h6>Multiple projets</h6> -->
                     </a>
                   </li>
                 </ul>
@@ -90,8 +93,27 @@
                 <!-- Tab content project -->
                 <div class="tab-content" id="projectTabContent">
                   <div class="tab-pane fade show active" id="content-link1" role="tabpanel" aria-labelledby="content-link1-tab">
+                    <h1 class="h1-projet">Flask</h1>
+                    <div class="row space-row-2"></div>
+                    <p>Vous êtes sur un site réaliser avec flask, micro framework léger, facile à prendre en main et posséde des outils qui facilite la création d'application.</p>
+                    <div class="row space-row-2"></div>
+                    <ul class="d-flex justify-content align-items-center">
+                      <li class="pe-3"><span class="div-span-strength-color">PYTHON</span></li>
+                      <li class="pe-3">JavaScript</li>
+                      <li class="pe-3">HTML</li>
+                      <li class="pe-3">CSS</li>
+                      <li> 
+                        <a href="https://github.com/dibattista/di-battista-barbara" target="_blank">
+                          <i class="fab fa-github i-size-custom i-highlight-color"></i>
+                        </a>
+                      </li> 
+                    </ul> 
+                  </div>
+                  <div class="tab-pane fade" id="content-link3" role="tabpanel" aria-labelledby="content-link3-tab">
                     <h1 class="h1-projet">INFINITY</h1>
-                    <h1 class="h1-projet">INNOVATION</h1>
+                    <h1 class="h1-projet">INNOVATION
+                      <img class="img-navbar-brand" src="{{url_for('static', filename='/images/favicon-infinity-innovation.png')}}" width="30" height="30" alt=''>
+                    </h1>
                     <div class="row space-row-2"></div>
                     <P class="p-projet">Infinity Innovation est une entreprise internationale qui vend des produits aux professionnels. Dans ce contexte, j'ai participé à la refonte du site internet en collaboration avec un designer.
                     </P>
@@ -109,7 +131,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="tab-pane fade" id="content-link2" role="tabpanel" aria-labelledby="content-link2-tab">
+                  <div class="tab-pane fade" id="content-link4" role="tabpanel" aria-labelledby="content-link4-tab">
                     <h1 class="h1-projet">VOTRE</h1>
                     <h1 class="h1-projet">RÉFLEXOLOGUE</h1>
                     <div class="row space-row-2"></div>
@@ -129,7 +151,7 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="tab-pane fade" id="content-link3" role="tabpanel" aria-labelledby="content-link3-tab">
+                  <div class="tab-pane fade" id="content-link2" role="tabpanel" aria-labelledby="content-link2-tab">
                     <h1 class="h1-projet">OC</h1>
                     <h1 class="h1-projet">Projet-5</h1>
                     <div class="row space-row-2"></div>
@@ -148,44 +170,34 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="tab-pane fade" id="content-link4" role="tabpanel" aria-labelledby="content-link4-tab">
+                  <div class="tab-pane fade" id="content-link5" role="tabpanel" aria-labelledby="content-link5-tab">
                     <h1 class="h1-projet">Projets</h1>
                     <h1 class="h1-projet">CMS</h1>
                     <div class="row space-row-2"></div>
                     <p>A l'écoute de mes clients et de leurs attentes en thermes de temps et budjets, le CMS Wordpress est un outil qui à permis à mon auto-entreprise de répondre à une demande.</p>
                     <p>A la recherche d'une vision globale du monde l'informatique et des demandes clients, je resort enriché de cette expérience.</p>
-                    <div class="row space-row-2"></div>
-                    <ul class="d-flex justify-content align-items-center">
-                      <li class="pe-3"><a href="https://univers-pods.com/" target="_blank">Univers-Pods</a>
+                    <div class="row">
+                      <div class="col-6" class="pe-3">
+                        <a href="https://univers-pods.com/" target="_blank">Univers-Pods</a>
+                        <br>
                         <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
-                      </li>
-                      <li class="pe-3"><a href="https://harmoniedetente.fr" target="_blank">Harmonie Détente</a>
+                      </div>
+                      <div class="col-6" class="pe-3">
+                        <a href="https://harmoniedetente.fr" target="_blank">Harmonie Détente</a>
+                        <br>
                         <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
-                      </li>
-                      <li class="pe-3"><a href="https://rambolikids.org/" target="_blank">Rambolikids</a>
+                      </div>
+                      <div class="col-6" class="pe-3">
+                        <a href="https://rambolikids.org/" target="_blank">Rambolikids</a>
+                        <br>
                         <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
-                      </li>
-                      <li class="pe-3"><a href="" target="_blank">En cours : Laura Thévenon</a>
+                      </div>
+                      <div class="col-6" class="pe-3">
+                        <a href="" target="_blank">En cours : Laura Thévenon</a>
+                        <br>
                         <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tab-pane fade" id="content-link5" role="tabpanel" aria-labelledby="content-link5-tab">
-                    <h1 class="h1-projet">Flask</h1>
-                    <div class="row space-row-2"></div>
-                    <p>Vous êtes sur un site réaliser avec flask, micro framework léger, facile à prendre en main et posséde des outils qui facilite la création d'application.</p>
-                    <div class="row space-row-2"></div>
-                    <ul class="d-flex justify-content align-items-center">
-                      <li class="pe-3"><span class="div-span-strength-color">PYTHON</span></li>
-                      <li class="pe-3">JavaScript</li>
-                      <li class="pe-3">HTML</li>
-                      <li class="pe-3">CSS</li>
-                      <li> 
-                        <a href="https://github.com/dibattista/di-battista-barbara" target="_blank">
-                          <i class="fab fa-github i-size-custom i-highlight-color"></i>
-                        </a>
-                      </li> 
-                    </ul> 
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!-- END Tab content project --> 

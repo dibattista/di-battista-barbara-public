@@ -257,7 +257,7 @@ a:hover .i-highlight-color {
 .bg-content-project {
   padding: 0 !important;
   margin: 0 !important;
-  height: 67vh;
+  height: auto;
   max-width: 100% !important;
   border-radius: 10px !important;
   /* box-shadow: rgb(99, 243, 249) 0px 20px 30px -10px; */
