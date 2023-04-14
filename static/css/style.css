@@ -137,7 +137,9 @@ footer{
 .space-row-5 {
   height: 5em;
 }
-
+.space-row-10 {
+  height: 10vh;
+}
 /* div left index */
 .vertical-title {
   font-family: 'Michroma', sans-serif;
