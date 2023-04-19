@@ -1,6 +1,5 @@
 from flask import Flask, render_template, send_file, request, send_from_directory
 
-
 application = Flask(__name__, static_folder='static', static_url_path='')
 
 @application.route('/')
