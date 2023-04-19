@@ -168,6 +168,10 @@ footer{
   text-shadow: 2px 1px rgb(var(--main-color)); 
   letter-spacing: .1em; 
 }
+
+.col-about-title {
+  padding-right: 3rem !important;
+}
 /* END div center */
 
 /* div right index */
@@ -209,6 +213,12 @@ footer{
 }
 .p-projet {
   color: #fff !important;
+}
+
+.p-project-word-color {
+  color: var(--main-highlight-color);
+  text-shadow: 2px 1px rgb(var(--main-color)); 
+  letter-spacing: .1em; 
 }
 
 .i-highlight-color {
