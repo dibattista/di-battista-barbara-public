@@ -215,6 +215,12 @@ footer{
   color: #fff !important;
 }
 
+.p-project-word-color {
+  color: var(--main-highlight-color);
+  text-shadow: 2px 1px rgb(var(--main-color)); 
+  letter-spacing: .1em; 
+}
+
 .i-highlight-color {
   color: rgb(var(--second-color)) !important; 
 }
