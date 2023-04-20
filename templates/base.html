@@ -65,13 +65,13 @@
                         <li class="nav-item nav__navigation">
                             <a class="nav-link nav__link {{ 'nav__link--active' if request.path == url_for('index') }}" 
                               href="{{ url_for('index')}}">
-                                PRÉSENTATION
+                                ABOUT
                             </a>
                         </li>
                         <li class="nav-item nav__navigation">
                           <a class="nav-link nav__link {{ 'nav__link--active' if request.path == url_for('projets') }}" 
                           href="{{ url_for('projets')}}">
-                            PROJETS
+                            PROJECTS
                           </a>
                         </li>
                     </ul>
@@ -80,20 +80,20 @@
                     <!-- Icons -->
                     <ul class="nav navbar-nav align-items-center custom-social-nav">
                         <li class="nav-item me-4 me-lg-0">
-                            <a class="nav-link" href="mailto: contact@dibattistabarbara.com">
+                            <a class="nav-link" href="mailto: contact@exemple.com">
                                 <i class="bi bi-envelope bi-envelope-color i-size-custom"></i>
                             </a>
                         </li>
                         <li class="nav-item me-4 me-lg-0">
                             <a class="nav-link" 
-                            href="https://www.linkedin.com/in/barbara-di-battista-710521b3/"
+                            href="https://www.linkedin.com"
                             target="_blank">
                                 <i class="fab fa-linkedin-in fa-linkedin-in-color i-size-custom"></i>
                             </a>
                         </li>
                         <li class="nav-item me-3 me-lg-0">
                             <a class="nav-link" 
-                            href="https://github.com/dibattista/di-battista-barbara"
+                            href="https://github.com"
                             target="_blank">
                               <i class="fab fa-github i-size-custom i-github-color"></i>
                             </a>
@@ -115,7 +115,7 @@
     <footer class="footer">
       <div class="foot-wrapper">
         <p class="d-flex justify-content-center footer-copyright">
-          <a href="{{ url_for('privacy')}}">© 2023 Barbara Di Battista | Mentions légales</a>
+          <a href="{{ url_for('privacy')}}">© 20-- YOUR-NAME | Mentions légales</a>
         </p>
       </div>
     </footer>
