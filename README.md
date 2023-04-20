@@ -1,4 +1,4 @@
-# MON PORTFOLIO EN FLASK
+# My Portfolio in Flask
 A simple flask website to present my work.
 
 ## Prepare Dev Environment
