@@ -1,7 +1,7 @@
 # My Portfolio in Flask
 A simple flask website to present my work.
 
-![alt text](https://github.com/dibattista/di-battista-barbara/blob/add-read-me/static/images/bdb-image-website.jpg?raw=true)
+![Image of my website](https://github.com/dibattista/di-battista-barbara/raw/add-read-me/static/images/bdb-image-website.png)
 
 
 ## Prepare Dev Environment
