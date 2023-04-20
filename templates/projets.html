@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
-{% block title %}Barbara Di Battista projets{% endblock %}
-{% block description %}Barbara présente ces réalisations, site internet VueJs et projet Python. {% endblock %}
+{% block title %}NAME project{% endblock %}
+{% block description %}NAME presents these achievements {% endblock %}
 
 {% block content %}
     <div class="container">
@@ -27,9 +27,9 @@
                       aria-controls="content-link1" 
                       aria-selected="false">
                       <p class="size-p-nav-link">
-                        FLASK
+                        TAB-1
                       </p>
-                      <img class="img-navbar-brand" src="{{url_for('static', filename='/images/favicon-bdb.png')}}" width="20" height="20" alt=''>
+                      <!-- <img class="img-navbar-brand" src="{{url_for('static', filename='/images/YOUR-favicon.png')}}" width="20" height="20" alt=''> -->
                       </a>
                   </li>
                   <li class="nav-item">
@@ -42,10 +42,9 @@
                       aria-controls="content-link2" 
                       aria-selected="false">
                       <p class="size-p-nav-link">
-                        PYTHON
+                        TAB-2
                       </p>
                       <i class="fab fa-github i-size-custom"></i>
-                      <!-- <p>OC- Projet-5</p> -->
                     </a>
                   </li>
                   <li class="nav-item">
@@ -58,14 +57,14 @@
                       aria-controls="content-link3" 
                       aria-selected="true">
                       <p class="size-p-nav-link">
-                        VUEJS
+                        TAB-3
                       </p>
-                      <img class="img-navbar-brand" src="{{url_for('static', filename='/images/favicon-infinity-innovation.png')}}" width="20" height="20" alt=''>
+                      <i class="fab fa-github i-size-custom"></i>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a 
-                      class="nav-link mb-3"" 
+                      class="nav-link mb-3" 
                       id="content-link4-tab" 
                       data-bs-toggle="tab" 
                       data-bs-target="#content-link4" 
@@ -73,9 +72,9 @@
                       aria-controls="content-link4" 
                       aria-selected="false">
                       <p class="size-p-nav-link">
-                        HTML-ONLY
+                        TAB-4
                       </p>
-                      <img class="img-navbar-brand" src="{{url_for('static', filename='/images/LOGO_parachini_reflexologue.svg')}}" width="20" height="20" alt=''>
+                      <i class="fab fa-github i-size-custom"></i> 
                     </a>
                   </li>
                   <li class="nav-item">
@@ -88,7 +87,7 @@
                       aria-controls="content-link5" 
                       aria-selected="false">
                       <p class="size-p-nav-link">
-                        CMS
+                        TAB-5
                       </p>
                       <i class="bi bi-wordpress"></i>
                     </a>
@@ -101,13 +100,17 @@
                 <!-- Tab content project -->
                 <div class="tab-content" id="projectTabContent">
                   <div class="tab-pane fade show active" id="content-link1" role="tabpanel" aria-labelledby="content-link1-tab">
-                    <h1 class="h1-projet">Flask</h1>
-                    <h1 class="h1-projet">in Python 3</h1>
+                    <h1 class="h1-projet">TAB-1</h1>
+                    <h1 class="h1-projet">Content 1</h1>
                     <div class="row space-row-2"></div>
-                    <p><span class="p-project-word-color">Bienvenue ! </span>
-                      Dans le but de réaliser mon portfolio en <span class="p-project-word-color">Python</span>, j'ai découvert Flask. C'est un micro-framework, ce qui signifie qu'il est <span class="p-project-word-color">léger</span> mais aussi <span class="p-project-word-color">flexible</span>. J'ai trouvé qu'il était <span class="p-project-word-color">facile à appréhender</span> grâce à sa <span class="p-project-word-color">documentation</span> complète, concise et à sa  <span class="p-project-word-color">communauté</span>. J'ai également apprécié l'utilisation de <span class="p-project-word-color">Jinja2</span>, le moteur de templates, qui m'a permis de <span class="p-project-word-color">ne pas répéter du code inutilement</span>.
-                      Pour la partie <span class="p-project-word-color">design et responsive</span>, j'ai utilisé <span class="p-project-word-color">Bootstrap</span>. Bien que cela ait alourdi le site, le temps de développement a été <span class="p-project-word-color">rapide</span>.
-                      </p>
+                    <p>
+                      It is a long established <span class="div-span-strength-color">fact</span> that a reader will be <span class="div-span-strength-color">distracted</span> by the readable content of a page when looking at its layout. 
+                      The point of using <span class="div-span-strength-color">Lorem Ipsum</span> is that it has a more-or-less normal distribution of letters, 
+                      as opposed to using <span class="div-span-strength-color">'Content here</span>, content here', 
+                      making it look like readable <span class="div-span-strength-color">English</span>. 
+                      Many desktop publishing <span class="div-span-strength-color">packages</span> and web page editors now use <span class="div-span-strength-color">Lorem Ipsum</span> as their default model text, 
+                      and a search for <span class="div-span-strength-color">'lorem ipsum'</span> will uncover many web sites still in their infancy. Various <span class="div-span-strength-color">versions</span> have evolved over the years, 
+                    </p>
                     <div class="row space-row-2"></div>
                     <ul class="d-flex justify-content align-items-center">
                       <li class="pe-3"><span class="div-span-strength-color">Python</span></li>
@@ -122,11 +125,17 @@
                     </ul> 
                   </div>
                   <div class="tab-pane fade" id="content-link2" role="tabpanel" aria-labelledby="content-link2-tab">
-                    <h1 class="h1-projet">OC</h1>
-                    <h1 class="h1-projet">Projet-5</h1>
+                    <h1 class="h1-projet">TAB-2</h1>
+                    <h1 class="h1-projet">Content 2</h1>
                     <div class="row space-row-2"></div>
-                    <P class="p-projet">J'ai suivi un parcours en ligne appelé <span class="p-project-word-color">"Développeur d'application-Python"</span> sur <a href="https://openclassrooms.com/fr/"><span class="p-project-word-color">OpenClassrooms</span></a> et j'ai créé un programme qui utilise l'<span class="p-project-word-color">API</span> d'Open Food Facts pour trouver des aliments sains en France. Le programme utilise des informations sur la qualité des aliments pour suggérer des options plus saines.</p>
-                    <p><span class="p-project-word-color">Python</span> est vraiment un langage que j'ai plaisir à utiliser. Sa réputation n'est plus à faire : il est <span class="p-project-word-color">polyvalent, puissant, rapide, efficace et sa syntaxe est simple à appréhender.</span></p>
+                    <p>
+                      It is a long established <span class="div-span-strength-color">fact</span> that a reader will be <span class="div-span-strength-color">distracted</span> by the readable content of a page when looking at its layout. 
+                      The point of using <span class="div-span-strength-color">Lorem Ipsum</span> is that it has a more-or-less normal distribution of letters, 
+                      as opposed to using <span class="div-span-strength-color">'Content here</span>, content here', 
+                      making it look like readable <span class="div-span-strength-color">English</span>. 
+                      Many desktop publishing <span class="div-span-strength-color">packages</span> and web page editors now use <span class="div-span-strength-color">Lorem Ipsum</span> as their default model text, 
+                      and a search for <span class="div-span-strength-color">'lorem ipsum'</span> will uncover many web sites still in their infancy. Various <span class="div-span-strength-color">versions</span> have evolved over the years, 
+                    </p>
                     <div class="row space-row-2"></div>
                     <ul class="d-flex justify-content align-items-center">
                       <li class="pe-3"><span class="div-span-strength-color">Python</span></li>
@@ -141,13 +150,17 @@
                     </ul>
                   </div>
                   <div class="tab-pane fade" id="content-link3" role="tabpanel" aria-labelledby="content-link3-tab">
-                    <h1 class="h1-projet">INFINITY</h1>
-                    <h1 class="h1-projet">INNOVATION
-                    </h1>
+                    <h1 class="h1-projet">TAB-3</h1>
+                    <h1 class="h1-projet">Content 3</h1>
                     <div class="row space-row-2"></div>
-                    <P class="p-projet"><span class="p-project-word-color">Infinity Innovation</span> est une entreprise <span class="p-project-word-color">internationale</span> qui crée et vend des <span class="p-project-word-color">piscines</span> aux <span class="p-project-word-color"></span>professionnels</span>. 
-                      <br>Dans ce contexte, et afin d'assurer une <span class="p-project-word-color">communication transparente et régulière </span>avec la cliente et le designer, j'ai mis en place une méthodologie de gestion de projet <span class="p-project-word-color">agile</span> pour la <span class="p-project-word-color">refonte</span> du site vitrine.
-                      J'ai choisi <span class="p-project-word-color">Vue.js</span> pour ce projet car il est <span class="p-project-word-color">léger</span> et permet d'avoir un chargement d'images <span class="p-project-word-color">rapide</span>. Il est également facile à prendre en main et donc à <span class="p-project-word-color">maintenir</span>. J'ai dû utiliser Nuxt.js pour optimiser le <span class="p-project-word-color">référencement.</span></p>
+                    <p>
+                      It is a long established <span class="div-span-strength-color">fact</span> that a reader will be <span class="div-span-strength-color">distracted</span> by the readable content of a page when looking at its layout. 
+                      The point of using <span class="div-span-strength-color">Lorem Ipsum</span> is that it has a more-or-less normal distribution of letters, 
+                      as opposed to using <span class="div-span-strength-color">'Content here</span>, content here', 
+                      making it look like readable <span class="div-span-strength-color">English</span>. 
+                      Many desktop publishing <span class="div-span-strength-color">packages</span> and web page editors now use <span class="div-span-strength-color">Lorem Ipsum</span> as their default model text, 
+                      and a search for <span class="div-span-strength-color">'lorem ipsum'</span> will uncover many web sites still in their infancy. Various <span class="div-span-strength-color">versions</span> have evolved over the years, 
+                    </p>
                     <ul class="d-flex justify-content align-items-center">
                       <li class="pe-3"><span class="div-span-strength-color">VueJs - NuxtJs</span></li>
                       <li class="pe-3">JavaScript</li>
@@ -161,12 +174,17 @@
                     </ul>
                   </div>
                   <div class="tab-pane fade" id="content-link4" role="tabpanel" aria-labelledby="content-link4-tab">
-                    <h1 class="h1-projet">VOTRE</h1>
-                    <h1 class="h1-projet">RÉFLEXOLOGUE</h1>
+                    <h1 class="h1-projet">TAB-4</h1>
+                    <h1 class="h1-projet">Content 4</h1>
                     <div class="row space-row-2"></div>
-                    <P class="p-projet">Ce site <span class="p-project-word-color">vitrine</span> est dédié à la présentation des services de Serge Parachini, réflexologue professionnel.
-                      J'ai créé ce site en utilisant <span class="p-project-word-color">uniquement HTML et CSS</span>, <span class="p-project-word-color">premier site</span> que j'ai réalisé entièrement seule pour un client. Ce projet m'a permis d'avoir une <span class="p-project-word-color">vision complète</span> de la création d'un site internet, de la <span class="p-project-word-color">conception</span> à la <span class="p-project-word-color">mise en ligne</span>. Ce site est très facile à <span class="p-project-word-color">maintenir</span> et offre une <span class="p-project-word-color">expérience utilisateur</span> unique.
-                    </P>
+                    <p>
+                      It is a long established <span class="div-span-strength-color">fact</span> that a reader will be <span class="div-span-strength-color">distracted</span> by the readable content of a page when looking at its layout. 
+                      The point of using <span class="div-span-strength-color">Lorem Ipsum</span> is that it has a more-or-less normal distribution of letters, 
+                      as opposed to using <span class="div-span-strength-color">'Content here</span>, content here', 
+                      making it look like readable <span class="div-span-strength-color">English</span>. 
+                      Many desktop publishing <span class="div-span-strength-color">packages</span> and web page editors now use <span class="div-span-strength-color">Lorem Ipsum</span> as their default model text, 
+                      and a search for <span class="div-span-strength-color">'lorem ipsum'</span> will uncover many web sites still in their infancy. Various <span class="div-span-strength-color">versions</span> have evolved over the years, 
+                    </p>
                     <div class="row space-row-2"></div>
                     <ul class="d-flex justify-content align-items-center">
                       <li class="pe-3"><span class="div-span-strength-color">HTML</span></li>
@@ -181,28 +199,35 @@
                     </ul>
                   </div>
                   <div class="tab-pane fade" id="content-link5" role="tabpanel" aria-labelledby="content-link5-tab">
-                    <h1 class="h1-projet">Projets</h1>
-                    <h1 class="h1-projet">CMS</h1>
+                    <h1 class="h1-projet">TAB-5</h1>
+                    <h1 class="h1-projet">Content 5</h1>
                     <div class="row space-row-2"></div>
-                    <p><span class="p-project-word-color">WordPress</span> m'a permis de répondre efficacement aux demandes de mes clients en termes de <span class="p-project-word-color">temps</span> et de <span class="p-project-word-color">budget</span>. L'utilisation de ce <span class="p-project-word-color">CMS</span> m'a également permis d'acquérir une <span class="p-project-word-color">vision globale</span> du monde de l'informatique et des <span class="p-project-word-color">exigences</span> des clients. J'ai découvert les avantages des CMS tels que la possibilité de modifier des <span class="p-project-word-color">thèmes</span>, la facilité de <span class="p-project-word-color">maintenance</span> du contenu par le client, et la disponibilité de <span class="p-project-word-color">plugins</span> offrant des outils adaptés à des besoins <span class="p-project-word-color">spécifiques.</span></p>
+                    <p>
+                      It is a long established <span class="div-span-strength-color">fact</span> that a reader will be <span class="div-span-strength-color">distracted</span> by the readable content of a page when looking at its layout. 
+                      The point of using <span class="div-span-strength-color">Lorem Ipsum</span> is that it has a more-or-less normal distribution of letters, 
+                      as opposed to using <span class="div-span-strength-color">'Content here</span>, content here', 
+                      making it look like readable <span class="div-span-strength-color">English</span>. 
+                      Many desktop publishing <span class="div-span-strength-color">packages</span> and web page editors now use <span class="div-span-strength-color">Lorem Ipsum</span> as their default model text, 
+                      and a search for <span class="div-span-strength-color">'lorem ipsum'</span> will uncover many web sites still in their infancy. Various <span class="div-span-strength-color">versions</span> have evolved over the years, 
+                    </p>
                     <div class="row">
                       <div class="col-6" class="pe-3">
-                        <a href="https://univers-pods.com/" target="_blank">Univers-Pods
+                        <a href="" target="_blank">Project-CMS-1
                           <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
                         </a>
                       </div>
                       <div class="col-6" class="pe-3">
-                        <a href="https://harmoniedetente.fr" target="_blank">Harmonie Détente
+                        <a href="" target="_blank">Project-CMS-2
                           <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
                         </a>
                       </div>
                       <div class="col-6" class="pe-3">
-                        <a href="https://rambolikids.org/" target="_blank">Rambolikids
+                        <a href="" target="_blank">Project-CMS-3
                           <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
                         </a>
                       </div>
                       <div class="col-6" class="pe-3">
-                        <a href="" target="_blank">En cours : Laura Thévenon
+                        <a href="" target="_blank">Project-CMS-4
                           <i class="bi bi-box-arrow-up-right i-highlight-color i-size-custom"></i>
                         </a>
                       </div>
