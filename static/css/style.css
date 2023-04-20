@@ -153,12 +153,10 @@ footer{
 /* END div left index */
 
 /* div center */
-.h1-span-color-letter-d {
+.h1-span-color1-letter {
   color: rgb(var(--second-color)); 
 }
-.h1-span-color-letter-b {
-  color: #fff; 
- }
+
 .h1-span-color2-letter {
   color: rgb(var(--main-color));  
 }
