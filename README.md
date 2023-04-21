@@ -13,7 +13,7 @@ This is my personal portfolio website built with Flask and Bootstrap.
 
 ## Project Description
 
-My portfolio website showcases my projects and skills as a developer. It includes an About Me text, a list of my projects with descriptions and links, and a contact form for potential clients or collaborators.
+My portfolio website showcases my projects and skills as a developer. It includes a text about me, a list of my projects with descriptions and links, and a contact form for potential clients or collaborators.
 
 The website was built using Flask, a Python 3 micro-framework, and Bootstrap 5, a front-end component library. The code is hosted on GitHub and deployed to OVH.
 
