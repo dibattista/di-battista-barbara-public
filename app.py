@@ -17,7 +17,7 @@ def privacy():
 # Download route
 @application.route('/download')
 def download():
-    path = 'static/files/CV-BDB.pdf'
+    path = 'static/files/CV.pdf'
     return send_file(path, as_attachment=True)
 
 #SEO
