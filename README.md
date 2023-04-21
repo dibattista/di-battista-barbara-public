@@ -12,11 +12,13 @@ This is my personal portfolio website built with Flask and Bootstrap.
 
 
 ## Project Description
+I value keeping my site open source, so I created a public repository on GitHub with no personal content. This makes it easier for others to adapt and use.
+
+You can still view the result on dibattistabarbara.com
 
 My portfolio website showcases my projects and skills as a developer. It includes a text about me, a list of my projects with descriptions and links, and a contact form for potential clients or collaborators.
 
 The website was built using Flask, a Python 3 micro-framework, and Bootstrap 5, a front-end component library. The code is hosted on GitHub and deployed to OVH.
-
 
 ## Installation
 
