@@ -1,9 +1,2 @@
-# Distribution / packaging
-.Python
-
-# Environments
-.env
-.venv
-env/
+# ignore directory named venv
 venv/
-ENV/
